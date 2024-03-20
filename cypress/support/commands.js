@@ -24,6 +24,9 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
+//import './actions'              >>>>>caso necessário para o uso do tabNavigation<<<<<
+
+
 import { homePage } from "./pages/home.page";
 import loginPage from "./pages/login.page";
 

@@ -1,7 +1,7 @@
 {
-  "name": "cy-bdd-cucumber",
+  "name": "cy-bdd-cucumber-dicas",
   "version": "1.0.0",
-  "description": "Exemplo de Behavior Driven Development",
+  "description": "Exemplo de Behavior Driven Development-Dicas",
   "main": "index.js",
   "scripts": {
     "test": "npx cypress run"
@@ -11,6 +11,7 @@
   "dependencies": {
     "@badeball/cypress-cucumber-preprocessor": "^20.0.2",
     "@cypress/webpack-preprocessor": "^6.0.1",
-    "cypress": "^13.7.0"
+    "cypress": "^13.7.0",
+    "puppeteer": "^22.6.0"
   }
 }
