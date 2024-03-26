@@ -1,5 +1,7 @@
-/// <reference types="cypress" />
+const profilePage = {
+    customerName: () => {
+        return cy.get('[data-testid="customer-name"]');
+    }
+};
 
-export const profilePage = { 
-    customerName: () => { return cy.get('[data-testid="CustomerName"]')}
-}
+module.exports = profilePage;
