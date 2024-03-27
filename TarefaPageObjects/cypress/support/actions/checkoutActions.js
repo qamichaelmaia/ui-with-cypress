@@ -33,14 +33,19 @@ const checkoutActions = {
     
     addNewAddress: (nome, telefone, end1, cidade, estado, cep) => {
         // Chame a função address diretamente
-        //cy.get(':nth-child(1) > .css-175oi2r > .css-11aywtz').type(nome)
+        cy.get('.r-1d7mnkm > :nth-child(1) > .css-175oi2r > .css-11aywtz').clear().type(nome)
         cy.get(':nth-child(2) > .css-175oi2r > .css-11aywtz').clear().type(telefone)
-        cy.get(':nth-child(3) > .css-175oi2r > .css-11aywtz').clear().type(telefone);
-        cy.get(':nth-child(4) > .css-175oi2r > .css-11aywtz').clear().type(end1);
-        cy.get(':nth-child(5) > .css-175oi2r > .css-11aywtz').clear().type(cidade);
-        cy.get(':nth-child(6) > .css-175oi2r > .css-11aywtz').clear().type(estado);
-        cy.get(':nth-child(7) > .css-175oi2r > .css-11aywtz').clear().type(cep);
-        cy.wait(5000);
+        cy.get(':nth-child(3) > .css-175oi2r > .css-11aywtz').clear().type(end1);
+        cy.get(':nth-child(4) > .css-175oi2r > .css-11aywtz').clear().type(cidade);
+        cy.get(':nth-child(5) > .css-175oi2r > .css-11aywtz').clear().type(estado);
+        cy.get(':nth-child(6) > .css-175oi2r > .css-11aywtz').clear().type(cep);
+        cy.get('[data-testid="save"]').click()
+        cy.wait(2000);
+
+        cy.get('[style="background-color: rgb(242, 242, 242); display: flex;"] > :nth-child(1) > :nth-child(1) > .r-13awgt0 > :nth-child(1) > .r-1awozwy > [data-testid="back"] > .css-146c3p1').click()
+        cy.get('[data-testid="selectAddressOrContinueToPayment"]').click()
+        cy.get('[data-testid="completeCheckout"]').click()
+        cy.wait(2000)
         //cy.get('[data-testid="completeCheckout"]').click()
         //cy.get('[data-testid="goBackHome"]').should('have.text', 'Go Back Home')
         //checkoutActions.address(nome, telefone, end1, cidade, estado, cep);

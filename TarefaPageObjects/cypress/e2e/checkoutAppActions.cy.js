@@ -6,12 +6,12 @@ const checkoutActions = require("../support/actions/checkoutActions");
 
 describe("Teste de Checkout", () => {
     let email, senha;
-    let nome = "Maia";
-    let telefone = "77777777";
-    let end1 = " rua do cajueiro";
-    let cidade = "Jacobina";
-    let estado = " Bahia";
-    let cep = "77777777";
+    let nome = "João Pimenta";
+    let telefone = "77778888888";
+    let end1 = "Cristal Lake";
+    let cidade = "Baldur's Gate";
+    let estado = "Bahia";
+    let cep = "44789000";
 
     before(() => {
         // Executa apenas uma vez antes de todos os testes
