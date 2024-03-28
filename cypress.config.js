@@ -3,6 +3,7 @@ const webpack = require("@cypress/webpack-preprocessor");
 const {
     addCucumberPreprocessorPlugin,
 } = require("@badeball/cypress-cucumber-preprocessor");
+require('dotenv').config()
 
 async function setupNodeEvents(on, config) {
     await addCucumberPreprocessorPlugin(on, config);///Necessário acrescentar (on, config), pois estava dando um erro que indica que os manipuladores de eventos do preprocessador não foram configurados corretamente
@@ -37,7 +38,15 @@ async function setupNodeEvents(on, config) {
 module.exports = defineConfig({
     e2e: {
         baseUrl: "http://lojaebac.ebaconline.art.br",
-        specPattern:"**/*.feature",
+        "specPattern":[
+            "**/*.feature",
+            "**/*.cy.js"
+          ],
         setupNodeEvents
     },
+    env: {
+        //MY_ENV: "dev",
+        MY_ENV: process.env.MY_ENV,
+        ebacStoreVersion: "v1"
+    }
 });

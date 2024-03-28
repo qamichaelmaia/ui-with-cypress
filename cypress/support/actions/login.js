@@ -2,8 +2,10 @@ import { homePage } from "./pages/home.page";
 import { loginPage } from '../pages'
 
 Cypress.Commands.add("login", (email, senha) => {
-    //cy.visit("/");
+    cy.setCookie("ebacStoreVersion", "v2", {
+        domain: "lojaebac.ebaconline.art.br",
+    }); // cy.setCookie = entrar pela cookie criada no DevTools
+    cy.visit("/")
     homePage.openMenu("Account");
     loginPage.login(email, senha);
-
 });
