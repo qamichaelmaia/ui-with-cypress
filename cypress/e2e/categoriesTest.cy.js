@@ -12,7 +12,7 @@ describe("Enviroment Variables", () => {
 
     categories.forEach(category => {
         it(`Validação categoria ${category.name}`, () => {//Utilizando uma fixures de categoria para separar os testes na mesma it
-            homePage.openSearchProduct()
+            homePage.openSearchProduct()//teste
             homePage.openCategoriesFilter()
             homePage.categories().should('contain.text', category.name)
         });
