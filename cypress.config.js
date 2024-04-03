@@ -42,11 +42,19 @@ module.exports = defineConfig({
             "**/*.feature",
             "**/*.cy.js"
           ],
-        setupNodeEvents
+        setupNodeEvents(on, config){
+            require('cypress-html-reporter/GenerateReport')(on, config)
+
+        }
     },
     env: {
         //MY_ENV: "dev",
         MY_ENV: process.env.MY_ENV,
         ebacStoreVersion: "v1"
-    }
+    },
+    /*reporter: 'mochawesome',
+    reporterOptions: {
+        reportFilename: "[name]-result",
+        html: false
+    }*/
 });

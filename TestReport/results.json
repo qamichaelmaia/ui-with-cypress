@@ -1,0 +1,372 @@
+{
+  "browserName": "electron",
+  "browserPath": "",
+  "browserVersion": "118.0.5993.159",
+  "config": {
+    "env": {
+      "MY_ENV": "prd",
+      "ebacStoreVersion": "v2"
+    },
+    "baseUrl": "http://lojaebac.ebaconline.art.br",
+    "specPattern": [
+      "**/*.feature",
+      "**/*.cy.js"
+    ],
+    "projectRoot": "C:\\Users\\conta\\OneDrive\\Documentos\\EBAC-Aula\\Mod22\\automacao-ui-cypress",
+    "projectName": "automacao-ui-cypress",
+    "configFile": "cypress.config.js",
+    "isTextTerminal": true,
+    "animationDistanceThreshold": 5,
+    "arch": "x64",
+    "blockHosts": null,
+    "chromeWebSecurity": true,
+    "clientCertificates": [],
+    "defaultCommandTimeout": 4000,
+    "downloadsFolder": "C:\\Users\\conta\\OneDrive\\Documentos\\EBAC-Aula\\Mod22\\automacao-ui-cypress\\cypress\\downloads",
+    "execTimeout": 60000,
+    "experimentalCspAllowList": false,
+    "experimentalFetchPolyfill": false,
+    "experimentalInteractiveRunEvents": false,
+    "experimentalRunAllSpecs": false,
+    "experimentalMemoryManagement": false,
+    "experimentalModifyObstructiveThirdPartyCode": false,
+    "experimentalSkipDomainInjection": null,
+    "experimentalOriginDependencies": false,
+    "experimentalSourceRewriting": false,
+    "experimentalSingleTabRunMode": false,
+    "experimentalStudio": false,
+    "experimentalWebKitSupport": false,
+    "fileServerFolder": "C:\\Users\\conta\\OneDrive\\Documentos\\EBAC-Aula\\Mod22\\automacao-ui-cypress",
+    "fixturesFolder": "C:\\Users\\conta\\OneDrive\\Documentos\\EBAC-Aula\\Mod22\\automacao-ui-cypress\\cypress\\fixtures",
+    "excludeSpecPattern": "*.hot-update.js",
+    "includeShadowDom": false,
+    "keystrokeDelay": 0,
+    "modifyObstructiveCode": true,
+    "numTestsKeptInMemory": 0,
+    "platform": "win32",
+    "pageLoadTimeout": 60000,
+    "port": 64501,
+    "projectId": null,
+    "redirectionLimit": 20,
+    "reporter": "spec",
+    "reporterOptions": null,
+    "requestTimeout": 5000,
+    "resolvedNodePath": "C:\\Program Files\\nodejs\\node.exe",
+    "resolvedNodeVersion": "20.9.0",
+    "responseTimeout": 30000,
+    "retries": {
+      "runMode": 0,
+      "openMode": 0
+    },
+    "screenshotOnRunFailure": true,
+    "screenshotsFolder": "C:\\Users\\conta\\OneDrive\\Documentos\\EBAC-Aula\\Mod22\\automacao-ui-cypress\\cypress\\screenshots",
+    "slowTestThreshold": 10000,
+    "scrollBehavior": "top",
+    "supportFile": "C:\\Users\\conta\\OneDrive\\Documentos\\EBAC-Aula\\Mod22\\automacao-ui-cypress\\cypress\\support\\e2e.js",
+    "taskTimeout": 60000,
+    "testIsolation": true,
+    "trashAssetsBeforeRuns": true,
+    "userAgent": null,
+    "video": false,
+    "videoCompression": false,
+    "videosFolder": "C:\\Users\\conta\\OneDrive\\Documentos\\EBAC-Aula\\Mod22\\automacao-ui-cypress\\cypress\\videos",
+    "viewportHeight": 660,
+    "viewportWidth": 1000,
+    "waitForAnimations": true,
+    "watchForFileChanges": false,
+    "browsers": [
+      {
+        "channel": "stable",
+        "displayName": "Edge",
+        "family": "chromium",
+        "majorVersion": "123",
+        "name": "edge",
+        "path": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+        "version": "123.0.2420.65"
+      },
+      {
+        "channel": "stable",
+        "displayName": "Electron",
+        "family": "chromium",
+        "majorVersion": 118,
+        "name": "electron",
+        "path": "",
+        "version": "118.0.5993.159"
+      }
+    ],
+    "cypressBinaryRoot": "C:\\Users\\conta\\AppData\\Local\\Cypress\\Cache\\13.7.1\\Cypress\\resources\\app",
+    "hosts": null,
+    "isInteractive": true,
+    "version": "13.7.1",
+    "testingType": "e2e",
+    "browser": null,
+    "cypressInternalEnv": "production"
+  },
+  "cypressVersion": "13.7.1",
+  "endedTestsAt": "2024-04-03T00:47:29.898Z",
+  "osName": "win32",
+  "osVersion": "10.0.22631",
+  "runs": [
+    {
+      "error": "Oops...we found an error preparing this test file:\n\n  > cypress\\e2e\\Login.feature\n\nThe error was:\n\nError: Webpack Compilation Error\nModule parse failed: Unexpected token (2:13)\nYou may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders\n| Feature: Autenticação\n>     Scenario Outline: Login de usuário\n|     Given que estou na página inicial\n|     When eu faço login com o usuario \"<email>\" e senha \"<senha>\"\n    at handle (C:\\Users\\conta\\AppData\\Local\\Cypress\\Cache\\13.7.1\\Cypress\\resources\\app\\node_modules\\@packages\\server\\node_modules\\@cypress\\webpack-preprocessor\\dist\\index.js:212:23)\n    at finalCallback (C:\\Users\\conta\\AppData\\Local\\Cypress\\Cache\\13.7.1\\Cypress\\resources\\app\\node_modules\\webpack\\lib\\Compiler.js:441:32)\n    at C:\\Users\\conta\\AppData\\Local\\Cypress\\Cache\\13.7.1\\Cypress\\resources\\app\\node_modules\\webpack\\lib\\Compiler.js:505:17\n    at C:\\Users\\conta\\AppData\\Local\\Cypress\\Cache\\13.7.1\\Cypress\\resources\\app\\node_modules\\webpack\\lib\\HookWebpackError.js:68:3\n    at Hook.eval [as callAsync] (eval at create (C:\\Users\\conta\\AppData\\Local\\Cypress\\Cache\\13.7.1\\Cypress\\resources\\app\\node_modules\\tapable\\lib\\HookCodeFactory.js:33:10), <anonymous>:6:1)\n    at Hook.CALL_ASYNC_DELEGATE [as _callAsync] (C:\\Users\\conta\\AppData\\Local\\Cypress\\Cache\\13.7.1\\Cypress\\resources\\app\\node_modules\\tapable\\lib\\Hook.js:18:14)\n    at Cache.storeBuildDependencies (C:\\Users\\conta\\AppData\\Local\\Cypress\\Cache\\13.7.1\\Cypress\\resources\\app\\node_modules\\webpack\\lib\\Cache.js:122:37)\n    at C:\\Users\\conta\\AppData\\Local\\Cypress\\Cache\\13.7.1\\Cypress\\resources\\app\\node_modules\\webpack\\lib\\Compiler.js:501:19\n    at Hook.eval [as callAsync] (eval at create (C:\\Users\\conta\\AppData\\Local\\Cypress\\Cache\\13.7.1\\Cypress\\resources\\app\\node_modules\\tapable\\lib\\HookCodeFactory.js:33:10), <anonymous>:6:1)\n    at Hook.CALL_ASYNC_DELEGATE [as _callAsync] (C:\\Users\\conta\\AppData\\Local\\Cypress\\Cache\\13.7.1\\Cypress\\resources\\app\\node_modules\\tapable\\lib\\Hook.js:18:14)\n    at C:\\Users\\conta\\AppData\\Local\\Cypress\\Cache\\13.7.1\\Cypress\\resources\\app\\node_modules\\webpack\\lib\\Compiler.js:498:23\n    at Compiler.emitRecords (C:\\Users\\conta\\AppData\\Local\\Cypress\\Cache\\13.7.1\\Cypress\\resources\\app\\node_modules\\webpack\\lib\\Compiler.js:919:5)\n    at C:\\Users\\conta\\AppData\\Local\\Cypress\\Cache\\13.7.1\\Cypress\\resources\\app\\node_modules\\webpack\\lib\\Compiler.js:490:11\n    at C:\\Users\\conta\\AppData\\Local\\Cypress\\Cache\\13.7.1\\Cypress\\resources\\app\\node_modules\\webpack\\lib\\Compiler.js:885:14\n    at Hook.eval [as callAsync] (eval at create (C:\\Users\\conta\\AppData\\Local\\Cypress\\Cache\\13.7.1\\Cypress\\resources\\app\\node_modules\\tapable\\lib\\HookCodeFactory.js:33:10), <anonymous>:6:1)\n    at Hook.CALL_ASYNC_DELEGATE [as _callAsync] (C:\\Users\\conta\\AppData\\Local\\Cypress\\Cache\\13.7.1\\Cypress\\resources\\app\\node_modules\\tapable\\lib\\Hook.js:18:14)\n    at C:\\Users\\conta\\AppData\\Local\\Cypress\\Cache\\13.7.1\\Cypress\\resources\\app\\node_modules\\webpack\\lib\\Compiler.js:882:27\n    at C:\\Users\\conta\\AppData\\Local\\Cypress\\Cache\\13.7.1\\Cypress\\resources\\app\\node_modules\\neo-async\\async.js:2818:7\n    at done (C:\\Users\\conta\\AppData\\Local\\Cypress\\Cache\\13.7.1\\Cypress\\resources\\app\\node_modules\\neo-async\\async.js:3522:9)\n    at alreadyWritten (C:\\Users\\conta\\AppData\\Local\\Cypress\\Cache\\13.7.1\\Cypress\\resources\\app\\node_modules\\webpack\\lib\\Compiler.js:714:8)\n    at C:\\Users\\conta\\AppData\\Local\\Cypress\\Cache\\13.7.1\\Cypress\\resources\\app\\node_modules\\webpack\\lib\\Compiler.js:802:19\n    at C:\\Users\\conta\\AppData\\Local\\Cypress\\Cache\\13.7.1\\Cypress\\resources\\app\\node_modules\\graceful-fs\\graceful-fs.js:123:16\n    at C:\\Users\\conta\\AppData\\Local\\Cypress\\Cache\\13.7.1\\Cypress\\resources\\app\\node_modules\\@packages\\server\\node_modules\\graceful-fs\\graceful-fs.js:123:16\n    at C:\\Users\\conta\\AppData\\Local\\Cypress\\Cache\\13.7.1\\Cypress\\resources\\app\\node_modules\\@packages\\server\\node_modules\\graceful-fs\\graceful-fs.js:123:16\n    at FSReqCallback.readFileAfterClose [as oncomplete] (node:internal/fs/read/context:68:3)\n\nThis occurred while Cypress was compiling and bundling your test code. This is usually caused by:\n\n- A missing file or dependency\n- A syntax error in the file or one of its dependencies\n\nFix the error in your code and re-run your tests.",
+      "reporterStats": null,
+      "screenshots": [],
+      "spec": {
+        "absolute": "C:/Users/conta/OneDrive/Documentos/EBAC-Aula/Mod22/automacao-ui-cypress/cypress/e2e/Login.feature",
+        "fileExtension": ".feature",
+        "fileName": "Login",
+        "name": "Login.feature",
+        "relative": "cypress\\e2e\\Login.feature"
+      },
+      "stats": {
+        "duration": 0,
+        "endedAt": "2024-04-03T00:47:01.290Z",
+        "failures": 1,
+        "passes": 0,
+        "pending": 0,
+        "skipped": 0,
+        "startedAt": "2024-04-03T00:47:01.290Z",
+        "suites": 0,
+        "tests": 0
+      },
+      "tests": [],
+      "video": null
+    },
+    {
+      "error": null,
+      "reporter": "spec",
+      "reporterStats": {
+        "suites": 1,
+        "tests": 2,
+        "passes": 2,
+        "pending": 0,
+        "failures": 0,
+        "start": "2024-04-03T00:47:03.627Z",
+        "end": "2024-04-03T00:47:11.359Z",
+        "duration": 7732
+      },
+      "screenshots": [],
+      "spec": {
+        "absolute": "C:/Users/conta/OneDrive/Documentos/EBAC-Aula/Mod22/automacao-ui-cypress/cypress/e2e/categoriesTest.cy.js",
+        "fileExtension": ".js",
+        "fileName": "categoriesTest",
+        "name": "categoriesTest.cy.js",
+        "relative": "cypress\\e2e\\categoriesTest.cy.js"
+      },
+      "stats": {
+        "duration": 7734,
+        "endedAt": "2024-04-03T00:47:11.355Z",
+        "failures": 0,
+        "passes": 2,
+        "pending": 0,
+        "skipped": 0,
+        "startedAt": "2024-04-03T00:47:03.621Z",
+        "suites": 1,
+        "tests": 2
+      },
+      "tests": [
+        {
+          "attempts": [
+            {
+              "state": "passed"
+            }
+          ],
+          "displayError": null,
+          "duration": 5376,
+          "state": "passed",
+          "title": [
+            "Enviroment Variables",
+            "Validação categoria Shoes"
+          ]
+        },
+        {
+          "attempts": [
+            {
+              "state": "passed"
+            }
+          ],
+          "displayError": null,
+          "duration": 2327,
+          "state": "passed",
+          "title": [
+            "Enviroment Variables",
+            "Validação categoria Clothes"
+          ]
+        }
+      ],
+      "video": null
+    },
+    {
+      "error": null,
+      "reporter": "spec",
+      "reporterStats": {
+        "suites": 1,
+        "tests": 2,
+        "passes": 2,
+        "pending": 0,
+        "failures": 0,
+        "start": "2024-04-03T00:47:13.304Z",
+        "end": "2024-04-03T00:47:15.887Z",
+        "duration": 2583
+      },
+      "screenshots": [],
+      "spec": {
+        "absolute": "C:/Users/conta/OneDrive/Documentos/EBAC-Aula/Mod22/automacao-ui-cypress/cypress/e2e/envTest.cy.js",
+        "fileExtension": ".js",
+        "fileName": "envTest",
+        "name": "envTest.cy.js",
+        "relative": "cypress\\e2e\\envTest.cy.js"
+      },
+      "stats": {
+        "duration": 2584,
+        "endedAt": "2024-04-03T00:47:15.883Z",
+        "failures": 0,
+        "passes": 2,
+        "pending": 0,
+        "skipped": 0,
+        "startedAt": "2024-04-03T00:47:13.299Z",
+        "suites": 1,
+        "tests": 2
+      },
+      "tests": [
+        {
+          "attempts": [
+            {
+              "state": "passed"
+            }
+          ],
+          "displayError": null,
+          "duration": 2497,
+          "state": "passed",
+          "title": [
+            "Enviroment Variables",
+            "Default Env"
+          ]
+        },
+        {
+          "attempts": [
+            {
+              "state": "passed"
+            }
+          ],
+          "displayError": null,
+          "duration": 46,
+          "state": "passed",
+          "title": [
+            "Enviroment Variables",
+            "Config test env"
+          ]
+        }
+      ],
+      "video": null
+    },
+    {
+      "error": null,
+      "reporter": "spec",
+      "reporterStats": {
+        "suites": 1,
+        "tests": 1,
+        "passes": 1,
+        "pending": 0,
+        "failures": 0,
+        "start": "2024-04-03T00:47:17.686Z",
+        "end": "2024-04-03T00:47:22.763Z",
+        "duration": 5077
+      },
+      "screenshots": [],
+      "spec": {
+        "absolute": "C:/Users/conta/OneDrive/Documentos/EBAC-Aula/Mod22/automacao-ui-cypress/cypress/e2e/intercept.cy.js",
+        "fileExtension": ".js",
+        "fileName": "intercept",
+        "name": "intercept.cy.js",
+        "relative": "cypress\\e2e\\intercept.cy.js"
+      },
+      "stats": {
+        "duration": 5078,
+        "endedAt": "2024-04-03T00:47:22.759Z",
+        "failures": 0,
+        "passes": 1,
+        "pending": 0,
+        "skipped": 0,
+        "startedAt": "2024-04-03T00:47:17.681Z",
+        "suites": 1,
+        "tests": 1
+      },
+      "tests": [
+        {
+          "attempts": [
+            {
+              "state": "passed"
+            }
+          ],
+          "displayError": null,
+          "duration": 5069,
+          "state": "passed",
+          "title": [
+            "Teste de Autenticação",
+            "Categories should be empty with error"
+          ]
+        }
+      ],
+      "video": null
+    },
+    {
+      "error": null,
+      "reporter": "spec",
+      "reporterStats": {
+        "suites": 1,
+        "tests": 1,
+        "passes": 1,
+        "pending": 0,
+        "failures": 0,
+        "start": "2024-04-03T00:47:24.922Z",
+        "end": "2024-04-03T00:47:29.903Z",
+        "duration": 4981
+      },
+      "screenshots": [],
+      "spec": {
+        "absolute": "C:/Users/conta/OneDrive/Documentos/EBAC-Aula/Mod22/automacao-ui-cypress/cypress/e2e/searchListTest.cy.js",
+        "fileExtension": ".js",
+        "fileName": "searchListTest",
+        "name": "searchListTest.cy.js",
+        "relative": "cypress\\e2e\\searchListTest.cy.js"
+      },
+      "stats": {
+        "duration": 4983,
+        "endedAt": "2024-04-03T00:47:29.898Z",
+        "failures": 0,
+        "passes": 1,
+        "pending": 0,
+        "skipped": 0,
+        "startedAt": "2024-04-03T00:47:24.915Z",
+        "suites": 1,
+        "tests": 1
+      },
+      "tests": [
+        {
+          "attempts": [
+            {
+              "state": "passed"
+            }
+          ],
+          "displayError": null,
+          "duration": 4972,
+          "state": "passed",
+          "title": [
+            "Enviroment Variables",
+            "Deve pesquisar os produtos e ter um valor listado"
+          ]
+        }
+      ],
+      "video": null
+    }
+  ],
+  "startedTestsAt": "2024-04-03T00:47:01.290Z",
+  "totalDuration": 20379,
+  "totalFailed": 1,
+  "totalPassed": 6,
+  "totalPending": 0,
+  "totalSkipped": 0,
+  "totalSuites": 4,
+  "totalTests": 6
+}

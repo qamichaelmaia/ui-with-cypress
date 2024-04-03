@@ -12,7 +12,7 @@ describe("Enviroment Variables", () => {
 
     it(`Deve pesquisar os produtos e ter um valor listado`, () => {
         homePage.openSearchProduct();
-        homePage.searchProduct('in')
+        homePage.searchProduct('i')
         homePage.products().should('have.length.greaterThan', 0)
 
         homePage.products().each(product =>{
