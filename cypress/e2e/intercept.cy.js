@@ -13,8 +13,8 @@ describe("Teste de Autenticação", () => {
         cy.login(email, senha);
     });
 
-    it("Categories should be visit", () => {
-        cy.intercept('GET','**/public/getCategories', {fixture: 'categories.json'}).as('getCategories')
+    it.only("Adicionar", () => {
+        cy.intercept('POST','**/public/getCategories', {fixture: 'categories.json'}).as('getCategories')
         homePage.openSearchProduct()
         homePage.openCategoriesFilter()
         homePage.categories().should('have.length.greaterThan', 1)
@@ -22,7 +22,7 @@ describe("Teste de Autenticação", () => {
         cy.compareSnapshot(Cypress.currentTest.title, 1);
     });
 
-    it("Categories should be empty", () => {
+    it("Remover", () => {
         cy.intercept('GET','**/public/getCategories', {fixture: 'noCategories.json'}).as('getCategoriesEmpty')
         homePage.openSearchProduct()
         homePage.openCategoriesFilter()
@@ -31,7 +31,7 @@ describe("Teste de Autenticação", () => {
         cy.compareSnapshot(Cypress.currentTest.title, 1);
     });
 
-    it.only("Categories should be empty with error", () => {
+    it("Atualizar", () => {
         cy.intercept('GET','**/public/getCategories', {statusCode: 500}).as('getCategoriesError')
         homePage.openSearchProduct()
         homePage.openCategoriesFilter()

@@ -1,7 +1,7 @@
 {
-  "name": "cy-lens",
+  "name": "cy-intercept",
   "version": "1.0.0",
-  "description": "Cypress Lens",
+  "description": "Cypress Intercept",
   "main": "index.js",
   "scripts": {
     "test": "npx cypress run",
