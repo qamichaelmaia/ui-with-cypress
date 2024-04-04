@@ -1,8 +1,7 @@
 const { defineConfig } = require("cypress");
 const webpack = require("@cypress/webpack-preprocessor");
-const {
-    addCucumberPreprocessorPlugin,
-} = require("@badeball/cypress-cucumber-preprocessor");
+const {addCucumberPreprocessorPlugin,} = require("@badeball/cypress-cucumber-preprocessor");
+const getCompareSnapshotsPlugin = require("cypress-lens/dist/plugin");
 require('dotenv').config()
 
 async function setupNodeEvents(on, config) {
@@ -36,6 +35,11 @@ async function setupNodeEvents(on, config) {
 }
 
 module.exports = defineConfig({
+
+    screenshotsFolder: "./cypress/snapshots/actual/cypress/e2e",
+    trashAssetsBeforeRuns: true,
+    video: false,
+
     e2e: {
         baseUrl: "http://lojaebac.ebaconline.art.br",
         "specPattern":[
@@ -43,15 +47,21 @@ module.exports = defineConfig({
             "**/*.cy.js"
           ],
         setupNodeEvents(on, config){
-            require('cypress-html-reporter/GenerateReport')(on, config)
+           // require('cypress-html-reporter/GenerateReport')(on, config)
+           getCompareSnapshotsPlugin(on, config);
 
-        }
+        },
+
     },
     env: {
         //MY_ENV: "dev",
         MY_ENV: process.env.MY_ENV,
-        ebacStoreVersion: "v1"
+        ebacStoreVersion: "v1",
+        failSilently: false,
+        SNAPSHOT_BASE_DIRECTORY: "./cypress/snapshots/base/cypress/e2e",
+        SNAPSHOT_DIFF_DIRECTORY: "./cypress/snapshots/diff/cypress/e2e"
     },
+    reporter:'cypress-lens'
     /*reporter: 'mochawesome',
     reporterOptions: {
         reportFilename: "[name]-result",

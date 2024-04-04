@@ -18,6 +18,8 @@ describe("Teste de Autenticação", () => {
         homePage.openSearchProduct()
         homePage.openCategoriesFilter()
         homePage.categories().should('have.length.greaterThan', 1)
+
+        cy.compareSnapshot(Cypress.currentTest.title, 1);
     });
 
     it("Categories should be empty", () => {
@@ -25,6 +27,8 @@ describe("Teste de Autenticação", () => {
         homePage.openSearchProduct()
         homePage.openCategoriesFilter()
         homePage.categories().should('have.length', 1)
+
+        cy.compareSnapshot(Cypress.currentTest.title, 1);
     });
 
     it.only("Categories should be empty with error", () => {
@@ -32,5 +36,7 @@ describe("Teste de Autenticação", () => {
         homePage.openSearchProduct()
         homePage.openCategoriesFilter()
         homePage.categories().should('have.length', 1)
+
+        cy.compareSnapshot(Cypress.currentTest.title, 1);
     });
 });

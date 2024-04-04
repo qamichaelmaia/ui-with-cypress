@@ -45,7 +45,7 @@
     "numTestsKeptInMemory": 0,
     "platform": "win32",
     "pageLoadTimeout": 60000,
-    "port": 64501,
+    "port": 65050,
     "projectId": null,
     "redirectionLimit": 20,
     "reporter": "spec",
@@ -103,7 +103,7 @@
     "cypressInternalEnv": "production"
   },
   "cypressVersion": "13.7.1",
-  "endedTestsAt": "2024-04-03T00:47:29.898Z",
+  "endedTestsAt": "2024-04-03T00:51:09.555Z",
   "osName": "win32",
   "osVersion": "10.0.22631",
   "runs": [
@@ -120,12 +120,12 @@
       },
       "stats": {
         "duration": 0,
-        "endedAt": "2024-04-03T00:47:01.290Z",
+        "endedAt": "2024-04-03T00:50:42.372Z",
         "failures": 1,
         "passes": 0,
         "pending": 0,
         "skipped": 0,
-        "startedAt": "2024-04-03T00:47:01.290Z",
+        "startedAt": "2024-04-03T00:50:42.372Z",
         "suites": 0,
         "tests": 0
       },
@@ -141,9 +141,9 @@
         "passes": 2,
         "pending": 0,
         "failures": 0,
-        "start": "2024-04-03T00:47:03.627Z",
-        "end": "2024-04-03T00:47:11.359Z",
-        "duration": 7732
+        "start": "2024-04-03T00:50:44.667Z",
+        "end": "2024-04-03T00:50:51.983Z",
+        "duration": 7316
       },
       "screenshots": [],
       "spec": {
@@ -154,13 +154,13 @@
         "relative": "cypress\\e2e\\categoriesTest.cy.js"
       },
       "stats": {
-        "duration": 7734,
-        "endedAt": "2024-04-03T00:47:11.355Z",
+        "duration": 7318,
+        "endedAt": "2024-04-03T00:50:51.980Z",
         "failures": 0,
         "passes": 2,
         "pending": 0,
         "skipped": 0,
-        "startedAt": "2024-04-03T00:47:03.621Z",
+        "startedAt": "2024-04-03T00:50:44.662Z",
         "suites": 1,
         "tests": 2
       },
@@ -172,7 +172,7 @@
             }
           ],
           "displayError": null,
-          "duration": 5376,
+          "duration": 4961,
           "state": "passed",
           "title": [
             "Enviroment Variables",
@@ -186,7 +186,7 @@
             }
           ],
           "displayError": null,
-          "duration": 2327,
+          "duration": 2333,
           "state": "passed",
           "title": [
             "Enviroment Variables",
@@ -205,9 +205,9 @@
         "passes": 2,
         "pending": 0,
         "failures": 0,
-        "start": "2024-04-03T00:47:13.304Z",
-        "end": "2024-04-03T00:47:15.887Z",
-        "duration": 2583
+        "start": "2024-04-03T00:50:53.713Z",
+        "end": "2024-04-03T00:50:56.222Z",
+        "duration": 2509
       },
       "screenshots": [],
       "spec": {
@@ -218,13 +218,13 @@
         "relative": "cypress\\e2e\\envTest.cy.js"
       },
       "stats": {
-        "duration": 2584,
-        "endedAt": "2024-04-03T00:47:15.883Z",
+        "duration": 2511,
+        "endedAt": "2024-04-03T00:50:56.219Z",
         "failures": 0,
         "passes": 2,
         "pending": 0,
         "skipped": 0,
-        "startedAt": "2024-04-03T00:47:13.299Z",
+        "startedAt": "2024-04-03T00:50:53.708Z",
         "suites": 1,
         "tests": 2
       },
@@ -236,7 +236,7 @@
             }
           ],
           "displayError": null,
-          "duration": 2497,
+          "duration": 2449,
           "state": "passed",
           "title": [
             "Enviroment Variables",
@@ -250,7 +250,7 @@
             }
           ],
           "displayError": null,
-          "duration": 46,
+          "duration": 43,
           "state": "passed",
           "title": [
             "Enviroment Variables",
@@ -269,9 +269,9 @@
         "passes": 1,
         "pending": 0,
         "failures": 0,
-        "start": "2024-04-03T00:47:17.686Z",
-        "end": "2024-04-03T00:47:22.763Z",
-        "duration": 5077
+        "start": "2024-04-03T00:50:57.956Z",
+        "end": "2024-04-03T00:51:02.484Z",
+        "duration": 4528
       },
       "screenshots": [],
       "spec": {
@@ -282,13 +282,13 @@
         "relative": "cypress\\e2e\\intercept.cy.js"
       },
       "stats": {
-        "duration": 5078,
-        "endedAt": "2024-04-03T00:47:22.759Z",
+        "duration": 4530,
+        "endedAt": "2024-04-03T00:51:02.481Z",
         "failures": 0,
         "passes": 1,
         "pending": 0,
         "skipped": 0,
-        "startedAt": "2024-04-03T00:47:17.681Z",
+        "startedAt": "2024-04-03T00:50:57.951Z",
         "suites": 1,
         "tests": 1
       },
@@ -300,7 +300,7 @@
             }
           ],
           "displayError": null,
-          "duration": 5069,
+          "duration": 4521,
           "state": "passed",
           "title": [
             "Teste de Autenticação",
@@ -319,9 +319,9 @@
         "passes": 1,
         "pending": 0,
         "failures": 0,
-        "start": "2024-04-03T00:47:24.922Z",
-        "end": "2024-04-03T00:47:29.903Z",
-        "duration": 4981
+        "start": "2024-04-03T00:51:04.141Z",
+        "end": "2024-04-03T00:51:09.561Z",
+        "duration": 5420
       },
       "screenshots": [],
       "spec": {
@@ -332,13 +332,13 @@
         "relative": "cypress\\e2e\\searchListTest.cy.js"
       },
       "stats": {
-        "duration": 4983,
-        "endedAt": "2024-04-03T00:47:29.898Z",
+        "duration": 5418,
+        "endedAt": "2024-04-03T00:51:09.555Z",
         "failures": 0,
         "passes": 1,
         "pending": 0,
         "skipped": 0,
-        "startedAt": "2024-04-03T00:47:24.915Z",
+        "startedAt": "2024-04-03T00:51:04.137Z",
         "suites": 1,
         "tests": 1
       },
@@ -350,7 +350,7 @@
             }
           ],
           "displayError": null,
-          "duration": 4972,
+          "duration": 5411,
           "state": "passed",
           "title": [
             "Enviroment Variables",
@@ -361,8 +361,8 @@
       "video": null
     }
   ],
-  "startedTestsAt": "2024-04-03T00:47:01.290Z",
-  "totalDuration": 20379,
+  "startedTestsAt": "2024-04-03T00:50:42.372Z",
+  "totalDuration": 19777,
   "totalFailed": 1,
   "totalPassed": 6,
   "totalPending": 0,

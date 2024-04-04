@@ -30,6 +30,9 @@
 import { homePage } from "./pages/home.page";
 import loginPage from "./pages/login.page";
 
+const compareSnapshotCommand = require("cypress-lens/dist/command");
+compareSnapshotCommand();
+
 Cypress.Commands.add("login", (email, senha) => {
     cy.setCookie("ebacStoreVersion", "v2", {
         domain: "lojaebac.ebaconline.art.br",

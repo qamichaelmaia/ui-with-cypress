@@ -19,5 +19,7 @@ describe("Enviroment Variables", () => {
             let price = product.find('[data-testid="price"]').text()
             expect(price).to.contain('R$')
         })
+
+        cy.compareSnapshot(Cypress.currentTest.title, 1);
     });
 });

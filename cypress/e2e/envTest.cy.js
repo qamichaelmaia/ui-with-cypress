@@ -19,15 +19,15 @@ describe("Enviroment Variables", () => {
         cy.log(Cypress.env("MY_ENV"));
         cy.log(Cypress.env("ebacStoreVersion"));
         cy.visit("/");
+
+        cy.compareSnapshot(Cypress.currentTest.title, 1);
     });
 
-    it(
-        "Config test env",
-        {
-            env: {MY_ENV: "local"},
-        },
-        () => {
-            cy.log(Cypress.env("MY_ENV"));
+    it("Config test env",{
+        env: {MY_ENV: "local"},},() => {
+        cy.log(Cypress.env("MY_ENV"));
+        
+        cy.compareSnapshot(Cypress.currentTest.title, 1);
         }
     );
 });

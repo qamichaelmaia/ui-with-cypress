@@ -15,6 +15,8 @@ describe("Enviroment Variables", () => {
             homePage.openSearchProduct()
             homePage.openCategoriesFilter()
             homePage.categories().should('contain.text', category.name)
+
+            cy.compareSnapshot(Cypress.currentTest.title, 1);
         });
     })
 });
