@@ -1,0 +1,17 @@
+{
+    "success": true,
+    "addresses": [
+        {
+            "_id": "660347cc4cd5a2e849428828",
+            "name": "Michael",
+            "phone": "74999115566",
+            "address": "rua da roça",
+            "city": "amazonas",
+            "state": "bahia",
+            "zipCode": "789879",
+            "createdAt": "2024-03-26T22:10:20.529Z",
+            "updatedAt": "2024-03-29T21:27:17.531Z",
+            "__v": 0
+        }
+    ]
+}

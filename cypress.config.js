@@ -47,8 +47,8 @@ module.exports = defineConfig({
             "**/*.cy.js"
           ],
         setupNodeEvents(on, config){
-           // require('cypress-html-reporter/GenerateReport')(on, config)
-           getCompareSnapshotsPlugin(on, config);
+           require('cypress-html-reporter/GenerateReport')(on, config)
+           //getCompareSnapshotsPlugin(on, config);
 
         },
 
@@ -61,10 +61,10 @@ module.exports = defineConfig({
         SNAPSHOT_BASE_DIRECTORY: "./cypress/snapshots/base/cypress/e2e",
         SNAPSHOT_DIFF_DIRECTORY: "./cypress/snapshots/diff/cypress/e2e"
     },
-    reporter:'cypress-lens'
-    /*reporter: 'mochawesome',
+    //reporter:'cypress-lens'
+    reporter: 'mochawesome',
     reporterOptions: {
         reportFilename: "[name]-result",
         html: false
-    }*/
+    }
 });

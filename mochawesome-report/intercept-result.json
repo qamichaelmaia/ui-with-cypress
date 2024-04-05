@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2024-04-03T00:28:27.197Z",
-    "end": "2024-04-03T00:28:32.447Z",
-    "duration": 5250,
+    "start": "2024-04-05T20:29:12.104Z",
+    "end": "2024-04-05T20:29:22.464Z",
+    "duration": 10360,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "fcad01cb-b170-40bb-8d66-7aca55f85713",
+      "uuid": "08f49ee8-54a6-4cce-8140-4052f4793c95",
       "title": "",
       "fullFile": "cypress\\e2e\\intercept.cy.js",
       "file": "cypress\\e2e\\intercept.cy.js",
@@ -27,40 +27,40 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "7cde2d2c-bc4a-4994-9e7f-e9fcb7b11315",
-          "title": "Teste de Autenticação",
+          "uuid": "724f1c51-7d94-4bd9-9c3a-38eb1b1c93f5",
+          "title": "Teste do Carrinho de Compras",
           "fullFile": "",
           "file": "",
           "beforeHooks": [],
           "afterHooks": [],
           "tests": [
             {
-              "title": "Categories should be empty with error",
-              "fullTitle": "Teste de Autenticação Categories should be empty with error",
+              "title": "Adicionar, Remover e Atualizar",
+              "fullTitle": "Teste do Carrinho de Compras Adicionar, Remover e Atualizar",
               "timedOut": null,
-              "duration": 5191,
+              "duration": 10303,
               "state": "passed",
-              "speed": "medium",
+              "speed": "slow",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "cy.intercept('GET','**/public/getCategories', {statusCode: 500}).as('getCategoriesError')\nhomePage.openSearchProduct()\nhomePage.openCategoriesFilter()\nhomePage.categories().should('have.length', 1)",
+              "code": "//Adicionar Produto\ncy.intercept('POST', '**/public/addToCart', {\n  fixture: 'addToCart'\n}).as('addToCart');\nhomePage.openSearchProduct();\nhomePage.addItemToCart();\nhomePage.cartItems().should('have.text', 'Continue to payment');\n//Remover Produto\ncy.intercept('POST', '**/public/removeItem', {\n  fixture: 'removeItem'\n}).as('removeItem');\nhomePage.removeFromCart().should('have.text', 'Remove');\n//Atualizar Quantidade do Produto\ncy.intercept('POST', '**/public/updateItem', {\n  fixture: 'updateItem'\n}).as('updateItem');\nhomePage.updateFromCart().should('have.length', 1);\ncy.wait(3000);",
               "err": {},
-              "uuid": "a99ec8fe-48d0-4d74-8752-cd03f7a47c0d",
-              "parentUUID": "7cde2d2c-bc4a-4994-9e7f-e9fcb7b11315",
+              "uuid": "655d8dc8-83cc-41e1-9fd4-7b279d44fc02",
+              "parentUUID": "724f1c51-7d94-4bd9-9c3a-38eb1b1c93f5",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "a99ec8fe-48d0-4d74-8752-cd03f7a47c0d"
+            "655d8dc8-83cc-41e1-9fd4-7b279d44fc02"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 5191,
+          "duration": 10303,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
