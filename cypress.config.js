@@ -61,10 +61,11 @@ module.exports = defineConfig({
         SNAPSHOT_BASE_DIRECTORY: "./cypress/snapshots/base/cypress/e2e",
         SNAPSHOT_DIFF_DIRECTORY: "./cypress/snapshots/diff/cypress/e2e"
     },
-    reporter:'cypress-lens'
-    /*reporter: 'mochawesome',
+    ///reporter:'cypress-lens'
+    reporter: 'mochawesome',
     reporterOptions: {
         reportFilename: "[name]-result",
-        html: false
-    }*/
+        html: true,
+        json: true
+    }
 });
